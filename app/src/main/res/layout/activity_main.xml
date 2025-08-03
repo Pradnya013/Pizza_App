@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFF0F5"
+>
+
+    <TextView
+        android:text="Pizza Order Customizer"
+        android:textSize="23sp"
+        android:textStyle="bold"
+        android:layout_gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#EA2F14"
+        android:fontFamily="serif"
+        android:layout_marginBottom="12dp"
+        android:layout_marginTop="1dp" />
+
+
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="150dp"
+        android:src="@drawable/pizza1"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="1dp"/>
+
+    <EditText
+        android:id="@+id/etName"
+        android:hint="Enter your name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="1dp"
+        android:textColor="#000000"/>
+
+    <TextView
+        android:text="Choose Size:"
+        android:layout_marginTop="1dp"
+        android:textStyle="bold"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="17dp"
+        android:textColor="#000000"/>
+
+    <RadioGroup
+        android:id="@+id/radioGroupSize"
+        android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        >
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/rbSmall"
+            android:text="Small"
+            android:textSize="16dp"
+            android:layout_margin="1dp"
+            android:textColor="#000000"/>
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/rbMedium"
+            android:text="Medium"
+            android:textSize="16dp"
+            android:layout_margin="1dp"
+            android:textColor="#000000"/>
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/rbLarge"
+            android:text="Large"
+            android:textSize="16dp"
+            android:textColor="#000000"/>
+    </RadioGroup>
+
+    <TextView
+
+        android:text="Choose Toppings:"
+        android:layout_marginTop="10dp"
+        android:textStyle="bold"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="17dp"
+        android:textColor="#000000"/>
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/cbCheese"
+        android:text="Extra Cheese"
+        android:textSize="16dp"
+        android:textColor="#000000"/>
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/cbOlives"
+        android:text="Olives"
+        android:textSize="16dp"
+        android:textColor="#000000"/>
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/cbBellPeppers"
+        android:text="Bell Peppers"
+        android:textSize="16dp"
+        android:textColor="#000000"/>
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/cbMushrooms"
+        android:text="Mushrooms"
+        android:textSize="16dp"
+        android:textColor="#000000"
+        />
+
+    <TextView
+        android:text="Quantity:"
+        android:layout_marginTop="10dp"
+        android:textStyle="bold"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="19dp"
+        android:textColor="#000000"/>
+
+    <EditText
+        android:id="@+id/etQuantity"
+        android:hint="Enter quantity"
+        android:inputType="number"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#000000"/>
+
+    <Button
+        android:id="@+id/btnOrder"
+        android:text="Place Order"
+        android:backgroundTint="#CB0404"
+        android:textColor="#FFFFFF"
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="16dp"/>
+</LinearLayout>
